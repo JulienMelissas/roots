@@ -20,6 +20,11 @@ add_action('wp_enqueue_scripts', function () {
  */
 add_action('after_setup_theme', function () {
     /**
+     * Enable WooCommerce Support
+     */
+    add_theme_support('woocommerce');
+
+    /**
      * Enable features from Soil when plugin is activated
      * @link https://roots.io/plugins/soil/
      */
